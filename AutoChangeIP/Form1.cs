@@ -145,7 +145,14 @@ namespace AutoChangeIP
             //p.StandardInput.WriteLine(docCMD.ToString());
 
             p.StandardInput.WriteLine("exit");
-            textShowLog.Text += "\r\n修改成功，当前：" + ipAdd + "\t我也不知道修改成功没，反正不报错...";
+           // textShowLog.Text += "\r\n修改成功，当前：" + ipAdd + "\t我也不知道修改成功没，反正不报错...";
+            
+            //string error = p.StandardError.ReadToEnd();
+            string output = p.StandardOutput.ReadToEnd();
+            textShowLog.Text += "\r\n-----当前：" + ipAdd  
+                +"\t-----\r\n-------------------------------------\r\n"+ output 
+                + "\r\n-------------------------------------";
+
             textShowLog.Select(textShowLog.TextLength, 0);
             textShowLog.ScrollToCaret();
         }

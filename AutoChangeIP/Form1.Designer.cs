@@ -186,11 +186,11 @@
             // 
             this.trackSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackSpeed.Location = new System.Drawing.Point(200, 118);
+            this.trackSpeed.Location = new System.Drawing.Point(217, 118);
             this.trackSpeed.Maximum = 60;
             this.trackSpeed.Minimum = 1;
             this.trackSpeed.Name = "trackSpeed";
-            this.trackSpeed.Size = new System.Drawing.Size(441, 56);
+            this.trackSpeed.Size = new System.Drawing.Size(424, 56);
             this.trackSpeed.TabIndex = 13;
             this.trackSpeed.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.trackSpeed.Value = 1;
