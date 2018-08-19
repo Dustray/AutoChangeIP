@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tIP1 = new System.Windows.Forms.TextBox();
             this.tIP2 = new System.Windows.Forms.TextBox();
             this.tIP3 = new System.Windows.Forms.TextBox();
@@ -255,6 +256,7 @@
             this.Controls.Add(this.tIP2);
             this.Controls.Add(this.tIP1);
             this.Controls.Add(this.label4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

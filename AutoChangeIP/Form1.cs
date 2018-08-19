@@ -43,6 +43,7 @@ namespace AutoChangeIP
                 tIP2.Enabled = false;
                 tIP3.Enabled = false;
                 tIP4.Enabled = false;
+                weblinkName.Enabled = false;
 
                 Thread thread = new Thread(loop);
                 thread.IsBackground = true;//后台进程，随主线程关闭消亡
@@ -61,6 +62,7 @@ namespace AutoChangeIP
                 tIP2.Enabled = true;
                 tIP3.Enabled = true;
                 tIP4.Enabled = true;
+                weblinkName.Enabled = true;
             }
             //setIPaddress();
         }
@@ -115,7 +117,7 @@ namespace AutoChangeIP
             {
                 //随机切换
                 changeMode.Text = "随机切换";
-                randomChange = false;
+                randomChange = true;
             }
         }
 
